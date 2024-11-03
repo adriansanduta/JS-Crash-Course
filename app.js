@@ -17,3 +17,18 @@ else if (loggedIn === true) {
 else {
     console.log('tell user to log into account')
 }
+
+/* Amount practice */
+
+let cash = 50
+let price = 40
+
+if (cash > price) {
+    console.log(`You paid extra here's ${cash - price} dollars change`)
+}
+else if (cash === price) {
+    console.log ("you paid the exact amount, have a nice day!")
+}
+else {
+    console.log(`not enough money - you still owe ${cash - price} dollars`)
+}
