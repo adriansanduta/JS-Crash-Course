@@ -58,3 +58,14 @@ let loggedIn = true
 let str = subscribed && loggedIn ? 'show the video' : 'hide the video'
 console.log(str);
 
+/* PRACTICE STORE 2 */
+
+let cash = 50
+let price = 40
+let isStoreOpen = true
+
+let str = cash >= price && isStoreOpen ? 'give receipt' : 'do not give receipt'
+console.log(str);
+
+/* LOOPS */
+
