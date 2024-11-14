@@ -30,5 +30,31 @@ else if (cash === price) {
     console.log ("you paid the exact amount, have a nice day!")
 }
 else {
-    console.log(`not enough money - you still owe ${difference} dollars`)
+    console.log(`not enough money - you still owe ${difference * -1} dollars`)
 }
+
+
+/* PRACTICE */
+
+let cash = 50
+let price = 40 
+let isStoreOpen = true
+
+if (cash >= price && !isStoreOpen) {
+    console.log('print the receipt')
+}
+
+/* TERNARY OPERATORS */
+
+let hot = true
+
+hot ? console.log('weather is hot outside') : console.log('weather is cold')
+
+/* TERNARY 2 */
+
+let subscribed = true
+let loggedIn = true 
+
+let str = subscribed && loggedIn ? 'show the video' : 'hide the video'
+console.log(str);
+
