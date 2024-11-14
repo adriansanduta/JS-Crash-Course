@@ -69,3 +69,17 @@ console.log(str);
 
 /* LOOPS */
 
+let count = 1;
+console.log(count);
+count = count + 1;
+console.log(count);
+
+/* LOOPS (DRY) */
+
+let count =1;
+
+while(count <= 100) {
+    console.log(count)
+        count = count + 1;
+}
+
