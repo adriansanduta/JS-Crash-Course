@@ -122,7 +122,13 @@ for (let i = 0; i < str.length; ++i) {
 }
 
 /* FUNCTIONS */
-function welcomePersonToFES()  {
-    console.log("Welcome to FES, Adrian")
+
+// Function definition
+function welcomePersonToFES(name)  {
+    console.log(`Welcome to FES, ${name}`)
 }
-welcomePersonToFES();
+
+// Call the function
+welcomePersonToFES('Adrian');
+welcomePersonToFES('Ben');
+welcomePersonToFES('Dino');
