@@ -120,3 +120,9 @@ const str = "Frontend Simplified"
 for (let i = 0; i < str.length; ++i) {
   console.log(str[i])
 }
+
+/* FUNCTIONS */
+function welcomePersonToFES()  {
+    console.log("Welcome to FES, Adrian")
+}
+welcomePersonToFES();
