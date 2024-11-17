@@ -88,3 +88,25 @@ while(count <= 100) {
 for (let i = 0; i < 100; i++) {
     console.log(i + 1);
 }
+
+/** Write a for-loop that loops 1 to 20
+ * If the number is divisble by 3, print "Frontend"
+ * If the number is divisble by 5, print "Simplified"
+ * If the number is divisible by 3 and 5, print "Frontend Simplified"
+ * If the number is not disible by 3 or 5, print the number
+ */
+
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+    console.log(`${i} -> Frontend Simplified`)
+} 
+    else if (i % 3 === 0) {
+        console.log(`${i} -> Frontend`)
+    }
+    else if (i % 5 === 0) {
+        console.log(`${i} -> Simplified`)
+    }
+    else {
+        console.log(`${i} -> ${i}`)
+    }
+}
