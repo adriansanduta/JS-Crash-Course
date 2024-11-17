@@ -142,3 +142,15 @@ function welcomePersonToFES(firstName, lastName)  {
 welcomePersonToFES('Adrian', 'Sandu');
 welcomePersonToFES('Ben', 'Doe');
 welcomePersonToFES('Dino' , 'Doe');
+
+/** Create a function that coverts Celsius to Fahrenheit
+ * 
+ * Celsius to Fahrenheit formula:
+ *  F = C x 1.8 + 32
+ */
+
+function convertCelsiusToFahrenheit(celsius) {
+    let fahrenheit = celsius * 1.8 + 32
+    return fahrenheit
+}
+console.log(convertCelsiusToFahrenheit(0))
