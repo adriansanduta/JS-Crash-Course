@@ -132,3 +132,13 @@ function welcomePersonToFES(name)  {
 welcomePersonToFES('Adrian');
 welcomePersonToFES('Ben');
 welcomePersonToFES('Dino');
+
+// Function definition
+function welcomePersonToFES(firstName, lastName)  {
+    console.log(`Welcome to FES, ${firstName} ${lastName}`)
+}
+
+// Call the function
+welcomePersonToFES('Adrian', 'Sandu');
+welcomePersonToFES('Ben', 'Doe');
+welcomePersonToFES('Dino' , 'Doe');
