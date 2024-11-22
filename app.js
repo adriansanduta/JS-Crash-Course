@@ -202,3 +202,11 @@ let arr = [20, 30, 40, 50, 100]
 let newArr = arr.filter(element => element < 50 )
 console.log(newArr)
 
+/**
+ * Filter out all the 'FAIL' elements in an array
+ */
+
+let grades = ['A+', 'A', 'FAIL']
+
+let goodGrades = arr.filter(element => element !== 'FAIL' )
+console.log(goodGrades)
