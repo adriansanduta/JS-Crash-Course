@@ -154,3 +154,16 @@ function convertCelsiusToFahrenheit(celsius) {
     return fahrenheit
 }
 console.log(convertCelsiusToFahrenheit(0))
+
+/** Create a function that coverts Celsius to Fahrenheit
+ * 
+ * Celsius to Fahrenheit formula:
+ *  F = C x 1.8 + 32
+ */
+
+
+const convertCelsiusToFahrenheit = (celsius) => {
+   return celsius * 1.8 + 32
+}
+
+console.log(convertCelsiusToFahrenheit(0))
