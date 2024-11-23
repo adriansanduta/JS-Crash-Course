@@ -254,3 +254,12 @@ console.log(cents);
  * [1, 5, 10, 3] => [100, 500, 1000, 300]
  * [0, 10, 20] => [0, 1000, 2000]
  */
+
+let dollars = [1, 5, 10, 3];
+let cents = [];
+
+for (let i = 0; i < dollars.length; i++) {
+    cents.push(dollars[i] * 100);
+}
+
+console.log(cents);
