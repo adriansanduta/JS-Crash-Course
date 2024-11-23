@@ -210,3 +210,26 @@ let grades = ['A+', 'A', 'FAIL']
 
 let goodGrades = arr.filter(element => element !== 'FAIL' )
 console.log(goodGrades)
+
+/**
+ * Filter out all the 'FAIL' elements in an array
+ * Without using the Array.filter method
+ */
+
+let grades = ['A+', 'A', 'FAIL']
+let goodGrades = []
+
+for (let i = 0; i < grades.lenght; ++1) {
+    if (grades[i] !== 'FAIL') {
+        goodGrades.push(grades[i]);
+    }
+}
+console.log(goodGrades);
+
+// Array map:
+
+let arr = [1, 4, 9, 16]
+
+arr.map((element) => {
+    console.log(element)
+})
