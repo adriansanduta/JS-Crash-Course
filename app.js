@@ -393,3 +393,18 @@ console.log(document.querySelector('#title'));
 //Second way of accesing the element
 
 console.log(document.getElementById('title'));
+
+
+//Change HTML
+document.querySelector('.title').innerHTML = 'Frontend Simplified'
+
+//Change CSS
+document.querySelector(".title").style.fontSize = '16px'
+
+function changeTitleToRed(){
+    console.log('clicked');
+}
+
+function changeTitleToRed(){
+    document.querySelector(".title").style.color = 'red'
+}
