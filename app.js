@@ -309,3 +309,77 @@ function login(email, password) {
     console.log('could not find an email that matches')
 }
 login('example@mail.com', 'password')
+
+// Objects practice:
+/**
+ * Create a register function that accepts:
+ * - username
+ * - email
+ * - password
+ * - subscriptionStatus
+ * - discordId
+ * - lessonsCompleted
+ * 
+ * Inside your register function:
+ * 1. Create a user object
+ * 2. Push this user object onto the 'users' array
+ */
+
+let users = [
+    {
+        username: 'John',
+        email: 'john@mail.com',
+        password: 'test123',
+        subscriptionStatus: 'VIP',
+        discordId: 'John#123',
+        lessonsCompleted: [0, 1],
+    },
+    {
+        username: 'Frank',
+        email: 'frank@mail.com',
+        password: 'test1234',
+        subscriptionStatus: 'VIP',
+        discordId: 'Frank#123',
+        lessonsCompleted: [0, 1, 2],
+    },
+    {
+        username: 'Sean',
+        email: 'sean@mail.com',
+        password: 'test12345',
+        subscriptionStatus: 'VIP',
+        discordId: 'Sean#123',
+        lessonsCompleted: [0, 1, 2, 3],
+    }
+]
+
+function register(username, email, password, subscriptionStatus, discordId, lessonCompleted) {
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].email === email &&
+            users[i].username === username &&
+            users[i].password === password &&
+            users[i].subscriptionStatus === subscriptionStatus &&
+            users[i].discordId === discordId &&
+            JSON.stringify(users[i].lessonsCompleted) === JSON.stringify(lessonCompleted.split(', ').map(Number))) {
+            console.log('log the user in - the details are correct');
+            return;
+        }
+    }
+    console.log('information is incorrect - try again');
+}
+register('John', 'john@mail.com', 'test123', 'VIP', 'John#123', '0, 1');
+
+//* 
+
+function register(user) {
+    users.push(user);
+}
+
+register ({
+        username: 'John',
+        email: 'john@mail.com',
+        password: 'test123',
+        subscriptionStatus: 'VIP',
+        discordId: 'John#123',
+        lessonsCompleted: [0, 1],
+});
+console.log(users);
