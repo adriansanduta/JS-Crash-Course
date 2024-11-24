@@ -383,3 +383,6 @@ register ({
         lessonsCompleted: [0, 1],
 });
 console.log(users);
+
+// DOM (Document Object Model)
+
