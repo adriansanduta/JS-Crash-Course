@@ -263,3 +263,49 @@ for (let i = 0; i < dollars.length; i++) {
 }
 
 console.log(cents);
+
+
+// Objects:
+
+let users = [
+    {
+        username: "John",
+        email: "john@mail.com",
+        pasword: "test123",
+        subscriptionStatus: "VIP",
+        discordId: "John#123",
+        lessonsCompleted: [0, 1],
+    }
+    {
+        username: "Frank",
+        email: "frank@mail.com",
+        pasword: "test1234",
+        subscriptionStatus: "VIP",
+        discordId: "Frank#123",
+        lessonsCompleted: [0, 1, 2],
+    }
+    {
+        username: "Sean",
+        email: "sean@mail.com",
+        pasword: "test12345",
+        subscriptionStatus: "VIP",
+        discordId: "Sean#123",
+        lessonsCompleted: [0, 1, 2, 3],
+    }
+]
+
+function login(email, password) {
+    for (let i = 0; i < users.lenght; i++) {
+        if (users[i].email === email) {
+            if (users[i].password === password) {
+                console.log('log the user in - the details are correct')
+            }
+            else {
+                console.log('password is incorect - try again')
+            }
+            return;
+        }
+    }
+    console.log('could not find an email that matches')
+}
+login('example@mail.com', 'password')
