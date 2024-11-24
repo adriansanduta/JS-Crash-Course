@@ -386,3 +386,10 @@ console.log(users);
 
 // DOM (Document Object Model)
 
+// First way of accesing an element(most common used)
+
+console.log(document.querySelector('#title'));
+
+//Second way of accesing the element
+
+console.log(document.getElementById('title'));
